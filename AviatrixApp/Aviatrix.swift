@@ -19,16 +19,15 @@ class Aviatrix {
         
     }
     
+    var location = ""
     func flyTo(destination : String) {
-        
+        location = destination
     }
-    
     func distanceTo(target : String) {
-    
+        return data.knownDistances["St. Louis"]![target]!
     }
-    
     func knownDestinations() -> [String] {
-       return ["St. Louis"]
+       return ["St. Louis", "Phoenix", "Denver", "SLC"]
     }
     var author = ""
     init(authorName: String) {
